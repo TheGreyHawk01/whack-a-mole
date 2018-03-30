@@ -1,0 +1,48 @@
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dirt-box{
+    min-height: 600px;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px; 
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border: 10px solid darkgreen;
+}
+.row{
+    border-style: solid;
+    border-right: 1px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding-right: 10px;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: space-around;
+}
+#mole{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px; 
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    background-color: grey;
+
+}
+.dirt{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px; 
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    background-color:rgb(205,133,63);
+    border: 10px solid rgb(139,69,19);
+}

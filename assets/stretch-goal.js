@@ -3,16 +3,16 @@ window.onload = function() {
   var sound = document.getElementById('sound');
   var grid = document.getElementById('dirt-box');
   // 1. Create a variable called numRows. Set it equal to 3.
-  var
+  var numRows = 3;
   // 2. Create a variable row0.
   // Store the row0-container.
-  var
+  var row0 = document.getElementByClassName('row0');
   // 3. Create a variable row1.
   // Store the row1-container.
-  var
+  var row1 = document.getElementByClassName('row1');
   // 4. Create a variable row2.
   // Store the row2-container
-  var
+  var row2 = document.getElementByClassName('row2');
 
   for (let i = 0; i < dirt.length; i++) {
     dirt[i].addEventListener('click', function() {
@@ -24,8 +24,22 @@ window.onload = function() {
       }
     });
   };
-
-  setInterval(setMole,1000);
+function setMole(){
+  var mole = document.createElement('div');
+  mole.setAttribute("id", "mole");
+  var randInt = Math.floor(Math.random() * Math.floor(dirt.length))
+  if(dirt[randInt].innerHTML === ""){
+dirt[rantInt].appendChild(mole);
+  }
+}
+  setInterval(function(){
+    var mole = document.createElement('div')
+    mole.setAttribute('id', 'mole')
+    var randInt = Math.floor(Math.random() * Math.floor(dirt.length))
+    if(dirt[randInt].innerHTML === ""){
+      dirt[rantInt].appendChild(mole);
+        }
+  }, 900)
 
   // Stretch Goal
   // checkNeighbor will check to see if there are any
@@ -35,11 +49,11 @@ window.onload = function() {
     // 5. Create a variable randRow.
     // Store a random number from from 0 to numRows to represent a row.
     // Should return 0, 1, or 2.
-    var
+    var randRow = Math.floor(Math.random() * 0) + 2;
 
     // 6. Create a variable setRow.
     // Do not assign anything to it yet.
-    var
+    var setRow;
 
     // 7. Create a switch statement that will switch
     // based on randRow.
@@ -49,7 +63,21 @@ window.onload = function() {
     // Default: console.log("Something in the checkNeighbor switch
     // isn't right!")
     // Remember, row0, row1, row2 are nodelists!
-
+switch (randRow().setRow()) {
+  default: 
+  console.log("checkNeighbor switch isnt right");
+  break;
+  case 1:
+  if(var i = 0; randRow = 0; i++){
+    setRow = row0;
+  };
+  if(var i = 0; randRow = 1; i++){
+    setRow = row1;
+  };
+  if(var i = 0; randRow = 2; i++){
+    setRow = row2;
+  };
+}
 
 
 
@@ -60,7 +88,9 @@ window.onload = function() {
     // corresponds to the FIRST position in a row?
       // If so, check if the element to the RIGHT has anything in it.
         // If there's a neighbor, call newDirt(setRow).
-
+if(var i = 0; row = 0; i++){
+  checkNeighbor = newDirt(setRow);
+}
 
     // 9. Create an else if statement to check if the position is
     // the last position in that row.
@@ -82,7 +112,7 @@ window.onload = function() {
   function newDirt(row) {
     // 11. Create a variable div.
     // Store a newly created 'div' element.
-    var
+    var div = document.getElementById()
 
     // 12. Create a variable className.
     // Do not assign anything to it yet.
@@ -124,7 +154,7 @@ window.onload = function() {
     // 18. Create a variable called randRow.
     // Store a random number to represent a row.
     // Should return 0, 1, or 2.
-    var
+    var randRow = Math.floor(Math.random() * 0) + 2;
 
     // 19. Create a variable called className
     // Store a string to represent the name of the class

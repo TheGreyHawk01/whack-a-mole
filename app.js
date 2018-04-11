@@ -11,8 +11,16 @@ window.onload = function(){
                 console.log('Nothing is here');
                 )
             }
-        })
+        };
     }
-
-
+}
+function setMole(){
+    var mole = document.createElement('div');
+    mole.setAttribute('id', 'mole');
+    var random = Math.floor(Math.random() * (dirt.length) + 1);
+    if(dirt[i].innerHTML){
+        appendChild('mole');
+        } else {
+            console.log('too many moles');
+        }
 }
